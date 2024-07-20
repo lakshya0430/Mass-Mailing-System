@@ -12,15 +12,7 @@ import jakarta.mail.MessagingException;
 
 public class Email {
 
-	public int send(String to, String from, String subject, String text) {
-		
-		//Properties properties = new Properties();
-		
-//		properties.put("mail.smtp.auth", true);
-//		properties.put("mail.smtp.starttls", true);
-//		properties.put("mail.smtp.port", "587");
-//		properties.put("mail.smtp.host", "smtp.gmail.com");
-//		
+	public int send(String to, String from, String subject, String text) {	
 		
 		Properties properties = new Properties();
 		properties.put("mail.smtp.auth", true);
@@ -29,8 +21,8 @@ public class Email {
 		properties.put("mail.smtp.host", "smtp.gmail.com");
 
 
-		String username = "lakshyamsli";
-		String password = "pcke rzsb smkq voat";
+		String username = "xyz"; //enter your email
+		String password = "xxxx xxxx xxxx xxxx"; //enter app password
 		
 		Session session = Session.getInstance(properties, new Authenticator() {
 			
